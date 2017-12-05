@@ -1,0 +1,5 @@
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=AwsFileUpload
+--content-root=D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload
+--file=

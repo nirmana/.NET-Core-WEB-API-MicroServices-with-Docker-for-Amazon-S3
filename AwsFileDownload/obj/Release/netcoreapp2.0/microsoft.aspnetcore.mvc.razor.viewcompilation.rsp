@@ -1,0 +1,5 @@
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=AwsFileDownload
+--content-root=D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload
+--file=

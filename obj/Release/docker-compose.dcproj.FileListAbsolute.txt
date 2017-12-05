@@ -1,0 +1,1 @@
+D:\ProjectsVS2017\AwsS3Microservices\obj\Release\docker-compose.dcproj.CoreCompileInputs.cache

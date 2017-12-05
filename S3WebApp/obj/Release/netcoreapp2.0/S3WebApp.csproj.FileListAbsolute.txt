@@ -1,0 +1,14 @@
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\Release\netcoreapp2.0\S3WebApp.deps.json
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\Release\netcoreapp2.0\S3WebApp.runtimeconfig.json
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\Release\netcoreapp2.0\S3WebApp.runtimeconfig.dev.json
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\Release\netcoreapp2.0\S3WebApp.dll
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\Release\netcoreapp2.0\S3WebApp.pdb
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\obj\Release\netcoreapp2.0\S3WebApp.csprojResolveAssemblyReference.cache
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\obj\Release\netcoreapp2.0\S3WebApp.csproj.CoreCompileInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\obj\Release\netcoreapp2.0\S3WebApp.AssemblyInfoInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\obj\Release\netcoreapp2.0\S3WebApp.AssemblyInfo.cs
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\obj\Release\netcoreapp2.0\S3WebApp.dll
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\obj\Release\netcoreapp2.0\S3WebApp.pdb
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\Release\netcoreapp2.0\Views\Home\About.cshtml
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\Release\netcoreapp2.0\Views\Home\Contact.cshtml
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\Release\netcoreapp2.0\Views\Home\Index.cshtml

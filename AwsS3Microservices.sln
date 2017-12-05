@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{2782E6A5-4FD3-40C3-B8B0-C3FDF466F14A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsFileUpload", "AwsFileUpload\AwsFileUpload.csproj", "{56F9672B-526A-4F1F-A46D-54A42B3F3924}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6374391A-19A1-48EF-932F-E4BBCF9C07E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsFileDownload", "AwsFileDownload\AwsFileDownload.csproj", "{4739D11B-8076-4698-91F6-10835C94AFBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{AC4FFA02-133D-4F78-A765-D641CEAF3AC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{44945717-DF62-436B-9DCB-570789E562EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3Helper", "S3Helper\S3Helper.csproj", "{08EF9ADD-758F-45A4-AB15-C7711E6BA6ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDto", "AppDto\AppDto.csproj", "{B64C07E9-DECE-4323-B8AF-03789458FE3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3WebApp", "S3WebApp\S3WebApp.csproj", "{22D7909F-6695-4D0D-A7B7-4CBE0B1F6442}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56F9672B-526A-4F1F-A46D-54A42B3F3924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F9672B-526A-4F1F-A46D-54A42B3F3924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F9672B-526A-4F1F-A46D-54A42B3F3924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F9672B-526A-4F1F-A46D-54A42B3F3924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6374391A-19A1-48EF-932F-E4BBCF9C07E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6374391A-19A1-48EF-932F-E4BBCF9C07E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6374391A-19A1-48EF-932F-E4BBCF9C07E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6374391A-19A1-48EF-932F-E4BBCF9C07E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4739D11B-8076-4698-91F6-10835C94AFBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4739D11B-8076-4698-91F6-10835C94AFBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4739D11B-8076-4698-91F6-10835C94AFBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4739D11B-8076-4698-91F6-10835C94AFBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08EF9ADD-758F-45A4-AB15-C7711E6BA6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08EF9ADD-758F-45A4-AB15-C7711E6BA6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08EF9ADD-758F-45A4-AB15-C7711E6BA6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08EF9ADD-758F-45A4-AB15-C7711E6BA6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64C07E9-DECE-4323-B8AF-03789458FE3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64C07E9-DECE-4323-B8AF-03789458FE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64C07E9-DECE-4323-B8AF-03789458FE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64C07E9-DECE-4323-B8AF-03789458FE3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22D7909F-6695-4D0D-A7B7-4CBE0B1F6442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22D7909F-6695-4D0D-A7B7-4CBE0B1F6442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22D7909F-6695-4D0D-A7B7-4CBE0B1F6442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22D7909F-6695-4D0D-A7B7-4CBE0B1F6442}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{56F9672B-526A-4F1F-A46D-54A42B3F3924} = {2782E6A5-4FD3-40C3-B8B0-C3FDF466F14A}
+		{4739D11B-8076-4698-91F6-10835C94AFBA} = {2782E6A5-4FD3-40C3-B8B0-C3FDF466F14A}
+		{08EF9ADD-758F-45A4-AB15-C7711E6BA6ED} = {44945717-DF62-436B-9DCB-570789E562EA}
+		{B64C07E9-DECE-4323-B8AF-03789458FE3F} = {44945717-DF62-436B-9DCB-570789E562EA}
+		{22D7909F-6695-4D0D-A7B7-4CBE0B1F6442} = {AC4FFA02-133D-4F78-A765-D641CEAF3AC1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F0A535C-73CA-47BB-9CF3-6B4BE95DF463}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://rangad.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AwsFileUpload\\AwsFileUpload.csproj
+		SccProjectTopLevelParentUniqueName1 = AwsS3Microservices.sln
+		SccProjectName1 = AwsFileUpload
+		SccLocalPath1 = AwsFileUpload
+		SccProjectUniqueName2 = AwsFileDownload\\AwsFileDownload.csproj
+		SccProjectTopLevelParentUniqueName2 = AwsS3Microservices.sln
+		SccProjectName2 = AwsFileDownload
+		SccLocalPath2 = AwsFileDownload
+		SccProjectUniqueName3 = S3Helper\\S3Helper.csproj
+		SccProjectTopLevelParentUniqueName3 = AwsS3Microservices.sln
+		SccProjectName3 = S3Helper
+		SccLocalPath3 = S3Helper
+		SccProjectUniqueName4 = AppDto\\AppDto.csproj
+		SccProjectTopLevelParentUniqueName4 = AwsS3Microservices.sln
+		SccProjectName4 = AppDto
+		SccLocalPath4 = AppDto
+		SccProjectUniqueName5 = S3WebApp\\S3WebApp.csproj
+		SccProjectTopLevelParentUniqueName5 = AwsS3Microservices.sln
+		SccProjectName5 = S3WebApp
+		SccLocalPath5 = S3WebApp
+	EndGlobalSection
+EndGlobal

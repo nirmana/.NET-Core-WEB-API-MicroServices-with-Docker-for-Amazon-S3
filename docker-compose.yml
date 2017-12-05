@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  awsfileupload:
+    image: awsfileupload
+    build:
+      context: ./AwsFileUpload
+      dockerfile: Dockerfile
+
+  awsfiledownload:
+    image: awsfiledownload
+    build:
+      context: ./AwsFileDownload
+      dockerfile: Dockerfile

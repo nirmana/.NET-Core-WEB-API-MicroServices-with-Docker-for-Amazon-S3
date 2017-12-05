@@ -1,0 +1,248 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+        asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+        asp-fallback-test="window.jQuery"
+        crossorigin="anonymous"
+        integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+</script>
+<script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+@*http://placehold.it/500x300*@
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link href="~/lib/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+<script>
+    var baseUrlUpload = "http://awss3upload.azurewebsites.net/api";
+    var baseUrlDownload = "http://awss3download.azurewebsites.net/api";
+
+    var documentDisplayTemplate = '<div class="col-md-2">' +
+        '<div class="thumbnail">' +
+        ' <img src="previewImage" alt="image">' +
+        '  <div class="caption">' +
+        '  <h6 class="content_right_head" title="fileName">fileName</h6>' +
+        '  <p style="text-align:right" ><a href="#" onclick="downloadDocument(fileKey);" class="btn btn-info btn-xs" role="button"><i class="fa fa-download"></i></a>' +
+        '   <a href="#" class="btn btn-danger btn-xs" onclick="deleteDocument(fileKey);" role="button"><i class="fa fa-trash"></i></a>' +
+        '  </p>' +
+        ' </div>' +
+        ' </div>' +
+        '  </div>';
+
+    $(document).ready(function () {
+        $("#upload").click(uploadDoc);
+        getAllDocumentsExist();
+
+        $('input[name="files"]').change(function () {
+            var fileName = $(this).val();
+           // alert(fileName);
+            $("#selectedFileInfo").text(fileName);
+        });
+    });
+
+   
+    //document.getElementById('files').onchange = function () {
+    //    alert('Selected file: ' + this.value);
+    //};
+    var uploadDoc = function (evt) {
+        showLoading();
+        var fileUpload = $("#files").get(0);
+        var files = fileUpload.files;
+        var data = new FormData();
+        for (var i = 0; i < files.length; i++) {
+            data.append(files[i].name, files[i]);
+        }
+        $.ajax({
+            type: "POST",
+            url: baseUrlUpload + "/FileUpload/UploadFilesAjax",
+            contentType: false,
+            processData: false,
+            data: data,
+            success: function (message) {
+                if (message === "ok") {
+                    swal("S3 app", "Uploaded Successfully!", "success");
+                    getAllDocumentsExist();
+                    $("#files").val('');
+                    $("#selectedFileInfo").text('');
+                } else {
+                    swal("S3 app", "Error occured while contacting with S3 service.Server http response is - " + message, "error")
+                }
+                hideLoading();
+            },
+            error: function (message) {
+                swal("S3 app", message, "error");
+                hideLoading();
+            }
+        });
+    };
+    var downloadDocument = function (fileKey) {
+        swal({ title: 'Processing...', text: 'Preparing your download...', showConfirmButton: false });
+        $.ajax({
+            method: 'POST',
+            url: baseUrlDownload + "/FileDownload/DownloadFile",
+            data: { 'fileKey': fileKey },
+            responseType: 'arraybuffer',
+            success: function (data, status, xhr) {
+                var headers = xhr.getAllResponseHeaders();
+                var filename = fileKey.split('-')[1];
+                var contentType = "application/octet-stream";//headers['content-type'];
+                var linkElement = document.createElement('a');
+                try {
+                    var blob = new Blob([data], { type: contentType });
+                    var url = window.URL.createObjectURL(blob);
+
+                    linkElement.setAttribute('href', url);
+                    linkElement.setAttribute("download", filename);
+
+                    var clickEvent = new MouseEvent("click", {
+                        "view": window,
+                        "bubbles": true,
+                        "cancelable": false
+                    });
+                    linkElement.dispatchEvent(clickEvent);
+                } catch (ex) {
+                    console.log(ex);
+                }
+                swal.close();
+            },
+            error: function (message) {
+                swal.close();
+            }
+        });
+
+    }
+
+    var deleteDocument = function (fileKey) {
+        swal({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!',
+
+        }).then(function (result) {
+            swal.close();
+            if (result) {
+                $(".swal-button swal-button--confirm").hide();
+                swal({ title: 'Processing...', text: 'Deleting your file...', showConfirmButton: false, showCancelButton: false });
+                $.ajax({
+                    type: "POST",
+                    url: baseUrlDownload + "/FileDownload/DeleteFile",
+                    data: { 'fileKey': fileKey },
+                    success: function (message) {
+                        $(".swal-button swal-button--confirm").show();
+                        if (message === "ok") {
+                            swal("S3 app", "Your file has been deleted!", "success");
+                            getAllDocumentsExist();
+                        } else {
+                            swal("S3 app", "Error occured while contacting with S3 service.Server http response is - " + message, "error")
+                        }
+                    },
+                    error: function (message) {
+                        $(".swal-button swal-button--confirm").show();
+                        swal("S3 app", message, "error");
+                    }
+                });
+            }
+        })
+    }
+    var getAllDocumentsExist = function () {
+        $("#displayLayout").empty();
+        $.ajax({
+            type: "POST",
+            url: baseUrlDownload + "/FileDownload/GetAllDocumentsExist",
+            contentType: 'application/json',
+            success: function (data) {
+                var i = 0;
+                data.forEach(function (arrayItem) {
+                    //var x = arrayItem.prop1 + 2;
+                    //   alert(arrayItem.key);
+
+                    var template = documentDisplayTemplate.replace(/previewImage/g, "S3WebApp/images/png/" + arrayItem.key.split('.').pop() + ".png");
+                    template = template.replace(/fileName/g, arrayItem.key.split('-')[1]);
+                    template = template.replace(/fileKey/g, "'" + arrayItem.key + "'");
+
+
+                    $("#displayLayout").append(template);
+                    i++;
+                    if (i !== 0 && i % 6 === 0) {
+                        $("#displayLayout").append('<div class="clearfix"></div>');
+                    }
+
+
+                });
+            },
+            error: function (message) {
+
+            }
+        });
+
+    }
+    function hideLoading() {
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("main").style.display = "block";
+    }
+
+    function showLoading() {
+        document.getElementById("loading").style.display = "block";
+        document.getElementById("main").style.display = "none";
+    }
+</script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h4 class="pull-left">File Uploader</h4>
+        </div>
+
+        <div class="col-md-9">
+            <h4 class="pull-left">Doc Viewer</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div id="overlay">
+                    <div id="loading" style="display:none;z-index:500"></div>
+
+                </div>
+                @*<form method="post" id="main" enctype="multipart/form-data">
+                        <input type="file" id="files"
+                               name="files" multiple />
+                        <input type="button"
+                               id="upload"
+                               value="Upload Selected Files" />
+                    </form>*@
+
+                <form method="post" id="main" enctype="multipart/form-data">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><strong>Upload files</strong> <small> </small></div>
+                        <div class="panel-body">
+                            <div class="input-group file-preview">
+                                <input placeholder="" type="text" class="form-control file-preview-filename" disabled="disabled">
+                                <!-- don't give a name === doesn't send on POST/GET -->
+                                <span class="input-group-btn">
+                                    <!-- file-preview-clear button -->
+                                    <button type="button" class="btn btn-default file-preview-clear" style="display:none;"> <span class="glyphicon glyphicon-remove"></span> Clear </button>
+                                    <!-- file-preview-input -->
+                                    <div class="btn btn-default file-preview-input">
+                                        <span class="glyphicon glyphicon-folder-open"></span> <span class="file-preview-input-title">Browse</span>
+                                        <input type="file" id="files"
+                                               name="files" multiple />
+                                    </div>
+                                    <button type="button" class="btn btn-labeled btn-primary" id="upload"> <span class="btn-label"><i class="glyphicon glyphicon-upload"></i> </span>Upload</button>
+                                </span>
+                               
+                            </div>
+                            <br />
+                            <p id="selectedFileInfo" class="content_right_head_large"></p>
+                            <br />
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-9" id="displayLayout">
+
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,4 @@
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\Debug\netcoreapp1.1\S3WebApp.deps.json
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\obj\Debug\netcoreapp1.1\S3WebApp.csprojResolveAssemblyReference.cache
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\obj\Debug\netcoreapp1.1\S3WebApp.csproj.CoreCompileInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\obj\Debug\netcoreapp1.1\S3WebApp.AssemblyInfo.cs

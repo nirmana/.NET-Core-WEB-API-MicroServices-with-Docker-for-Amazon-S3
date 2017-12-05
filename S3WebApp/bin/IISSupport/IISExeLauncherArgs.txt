@@ -1,0 +1,8 @@
+-p C:\Program Files\dotnet\dotnet.exe
+-pidFile D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\IISSupport\pidfile.txt
+-wd D:\ProjectsVS2017\AwsS3Microservices\S3WebApp
+-a exec "D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\bin\Debug\netcoreapp2.0\S3WebApp.dll"
+-pipe 56248589-ce5d-4a1c-b1da-a34bd966ed07
+-pr S3WebApp
+-owningPid 5736
+-env ASPNETCORE_CONTENTROOT=D:\ProjectsVS2017\AwsS3Microservices\S3WebApp|ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=Microsoft.AspNetCore.ApplicationInsights.HostingStartup|ASPNETCORE_ENVIRONMENT=Development|COMPLUS_ForceENC=1|

@@ -1,0 +1,15 @@
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\bin\Debug\netcoreapp2.0\AwsFileDownload.deps.json
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\bin\Debug\netcoreapp2.0\AwsFileDownload.runtimeconfig.json
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\bin\Debug\netcoreapp2.0\AwsFileDownload.runtimeconfig.dev.json
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\bin\Debug\netcoreapp2.0\AwsFileDownload.dll
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\bin\Debug\netcoreapp2.0\AwsFileDownload.pdb
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\bin\Debug\netcoreapp2.0\AppDto.dll
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\bin\Debug\netcoreapp2.0\S3Helper.dll
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\bin\Debug\netcoreapp2.0\AppDto.pdb
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\bin\Debug\netcoreapp2.0\S3Helper.pdb
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\obj\Debug\netcoreapp2.0\AwsFileDownload.csprojResolveAssemblyReference.cache
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\obj\Debug\netcoreapp2.0\AwsFileDownload.csproj.CoreCompileInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\obj\Debug\netcoreapp2.0\AwsFileDownload.AssemblyInfoInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\obj\Debug\netcoreapp2.0\AwsFileDownload.AssemblyInfo.cs
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\obj\Debug\netcoreapp2.0\AwsFileDownload.dll
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileDownload\obj\Debug\netcoreapp2.0\AwsFileDownload.pdb

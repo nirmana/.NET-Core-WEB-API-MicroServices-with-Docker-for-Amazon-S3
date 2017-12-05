@@ -1,0 +1,9 @@
+D:\ProjectsVS2017\AwsS3Microservices\S3Helper\bin\Release\netcoreapp2.0\S3Helper.deps.json
+D:\ProjectsVS2017\AwsS3Microservices\S3Helper\bin\Release\netcoreapp2.0\S3Helper.dll
+D:\ProjectsVS2017\AwsS3Microservices\S3Helper\bin\Release\netcoreapp2.0\S3Helper.pdb
+D:\ProjectsVS2017\AwsS3Microservices\S3Helper\obj\Release\netcoreapp2.0\S3Helper.csprojResolveAssemblyReference.cache
+D:\ProjectsVS2017\AwsS3Microservices\S3Helper\obj\Release\netcoreapp2.0\S3Helper.csproj.CoreCompileInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\S3Helper\obj\Release\netcoreapp2.0\S3Helper.AssemblyInfoInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\S3Helper\obj\Release\netcoreapp2.0\S3Helper.AssemblyInfo.cs
+D:\ProjectsVS2017\AwsS3Microservices\S3Helper\obj\Release\netcoreapp2.0\S3Helper.dll
+D:\ProjectsVS2017\AwsS3Microservices\S3Helper\obj\Release\netcoreapp2.0\S3Helper.pdb

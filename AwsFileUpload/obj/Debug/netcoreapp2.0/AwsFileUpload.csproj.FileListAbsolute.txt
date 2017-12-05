@@ -1,0 +1,15 @@
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\bin\Debug\netcoreapp2.0\AwsFileUpload.deps.json
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\bin\Debug\netcoreapp2.0\AwsFileUpload.runtimeconfig.json
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\bin\Debug\netcoreapp2.0\AwsFileUpload.runtimeconfig.dev.json
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\bin\Debug\netcoreapp2.0\AwsFileUpload.dll
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\bin\Debug\netcoreapp2.0\AwsFileUpload.pdb
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\bin\Debug\netcoreapp2.0\AppDto.dll
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\bin\Debug\netcoreapp2.0\S3Helper.dll
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\bin\Debug\netcoreapp2.0\AppDto.pdb
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\bin\Debug\netcoreapp2.0\S3Helper.pdb
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\obj\Debug\netcoreapp2.0\AwsFileUpload.csprojResolveAssemblyReference.cache
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\obj\Debug\netcoreapp2.0\AwsFileUpload.csproj.CoreCompileInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\obj\Debug\netcoreapp2.0\AwsFileUpload.AssemblyInfoInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\obj\Debug\netcoreapp2.0\AwsFileUpload.AssemblyInfo.cs
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\obj\Debug\netcoreapp2.0\AwsFileUpload.dll
+D:\ProjectsVS2017\AwsS3Microservices\AwsFileUpload\obj\Debug\netcoreapp2.0\AwsFileUpload.pdb

@@ -1,0 +1,9 @@
+D:\ProjectsVS2017\AwsS3Microservices\AppDto\bin\Debug\netcoreapp2.0\AppDto.deps.json
+D:\ProjectsVS2017\AwsS3Microservices\AppDto\bin\Debug\netcoreapp2.0\AppDto.dll
+D:\ProjectsVS2017\AwsS3Microservices\AppDto\bin\Debug\netcoreapp2.0\AppDto.pdb
+D:\ProjectsVS2017\AwsS3Microservices\AppDto\obj\Debug\netcoreapp2.0\AppDto.csprojResolveAssemblyReference.cache
+D:\ProjectsVS2017\AwsS3Microservices\AppDto\obj\Debug\netcoreapp2.0\AppDto.csproj.CoreCompileInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\AppDto\obj\Debug\netcoreapp2.0\AppDto.AssemblyInfoInputs.cache
+D:\ProjectsVS2017\AwsS3Microservices\AppDto\obj\Debug\netcoreapp2.0\AppDto.AssemblyInfo.cs
+D:\ProjectsVS2017\AwsS3Microservices\AppDto\obj\Debug\netcoreapp2.0\AppDto.dll
+D:\ProjectsVS2017\AwsS3Microservices\AppDto\obj\Debug\netcoreapp2.0\AppDto.pdb

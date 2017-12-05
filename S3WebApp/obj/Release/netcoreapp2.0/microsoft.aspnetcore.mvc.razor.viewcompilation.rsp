@@ -1,0 +1,12 @@
+D:\ProjectsVS2017\AwsS3Microservices\S3WebApp
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=S3WebApp
+--content-root=D:\ProjectsVS2017\AwsS3Microservices\S3WebApp
+--file=D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\Views\Home\About.cshtml
+--file=D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\Views\Home\Contact.cshtml
+--file=D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\Views\Home\Index.cshtml
+--file=D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\Views\Shared\Error.cshtml
+--file=D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\Views\Shared\_Layout.cshtml
+--file=D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\Views\_ViewImports.cshtml
+--file=D:\ProjectsVS2017\AwsS3Microservices\S3WebApp\Views\_ViewStart.cshtml
